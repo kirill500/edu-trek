@@ -1,9 +1,16 @@
 package telran.java53.student.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
 public class PaymentLog {
-	 int id;
-     String type;
-     int amount;
-     int installments;
-     int each;
+	Long id;
+	String type;
+    double amount;
+    int installments;
+    double each;
 }

@@ -2,8 +2,16 @@ package telran.java53.student.model;
 
 import java.util.List;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+
 public class Student {
-	long studentId;
+	Long studentId;
     String name;
     String surname;
     String phoneNumber;
@@ -12,8 +20,8 @@ public class Student {
     Enum<?> status;
     Enum<?> course;
     List<String> groups;
-    List<String> comments;
-    PaymentLog paymentLog;
-    List<Integer> reminders;
-    List<String> activityLog;
+    List<Comment> comments;
+    List<PaymentLog> paymentLog;
+    List<Remainder> reminders;
+    List<ActivityLog> activityLog;
 }
